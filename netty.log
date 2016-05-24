@@ -1,0 +1,1474 @@
+2016-05-24 19:27:12,239 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:27:12,244 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:27:12,245 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:27:12,262 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:27:12,283 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:27:12,283 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:27:12,284 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:27:12,284 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:27:12,285 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:27:12,285 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:27:12,285 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:27:12,285 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:27:12,286 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:27:12,286 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:27:12,286 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:27:12,287 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:27:12,287 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:27:12,287 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:27:12,287 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:27:12,343 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:27:12,354 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:27:12,362 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:27:12,363 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:27:12,387 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55386 (auto-detected)
+2016-05-24 19:27:12,390 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:27:12,391 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x23e53e0307045d42 (took 10 ms)
+2016-05-24 19:27:12,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:27:12,413 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:27:12,413 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:27:12,413 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:27:12,413 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:27:12,413 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:27:12,413 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:27:12,414 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:27:12,414 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:27:12,414 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:27:12,420 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:27:12,420 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:27:12,420 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:27:12,854 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:27:12,875 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:27:35,990 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:27:35,994 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:27:35,995 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:27:36,012 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:27:36,033 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:27:36,033 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:27:36,033 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:27:36,034 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:27:36,034 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:27:36,034 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:27:36,035 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:27:36,035 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:27:36,035 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:27:36,035 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:27:36,036 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:27:36,036 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:27:36,036 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:27:36,037 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:27:36,037 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:27:36,093 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:27:36,103 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:27:36,109 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:27:36,110 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:27:36,130 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55391 (auto-detected)
+2016-05-24 19:27:36,133 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:27:36,134 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x3966f5314095afc6 (took 9 ms)
+2016-05-24 19:27:36,153 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:27:36,153 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:27:36,153 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:27:36,154 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:27:36,160 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:27:36,160 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:27:36,160 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:27:36,579 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:27:36,599 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:30:28,379 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:30:28,383 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:30:28,384 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:30:28,400 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:30:28,420 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:30:28,421 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:30:28,421 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:30:28,421 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:30:28,422 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:30:28,422 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:30:28,422 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:30:28,423 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:30:28,423 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:30:28,423 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:30:28,423 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:30:28,424 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:30:28,424 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:30:28,424 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:30:28,424 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:30:28,479 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:30:28,489 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:30:28,495 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:30:28,496 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:30:28,515 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55423 (auto-detected)
+2016-05-24 19:30:28,518 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:30:28,518 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x8ca7715404700a96 (took 8 ms)
+2016-05-24 19:30:28,539 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:30:28,539 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:30:28,540 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:30:28,546 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:30:28,546 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:30:28,546 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:30:28,982 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:30:29,001 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:30:58,277 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:30:58,281 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:30:58,282 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:30:58,298 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:30:58,319 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:30:58,319 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:30:58,319 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:30:58,320 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:30:58,321 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:30:58,321 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:30:58,321 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:30:58,321 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:30:58,321 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:30:58,322 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:30:58,322 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:30:58,322 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:30:58,322 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:30:58,323 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:30:58,323 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:30:58,378 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:30:58,388 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:30:58,395 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:30:58,396 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:30:58,415 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55427 (auto-detected)
+2016-05-24 19:30:58,418 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:30:58,419 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x94bf843c65ed2e81 (took 8 ms)
+2016-05-24 19:30:58,438 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:30:58,438 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:30:58,438 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:30:58,438 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:30:58,438 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:30:58,438 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:30:58,439 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:30:58,439 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:30:58,439 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:30:58,439 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:30:58,444 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:30:58,445 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:30:58,445 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:30:58,889 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:30:58,908 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:33:20,235 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:33:20,239 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:33:20,241 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:33:20,256 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:33:20,276 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:33:20,277 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:33:20,277 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:33:20,277 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:33:20,278 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:33:20,278 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:33:20,278 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:33:20,278 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:33:20,279 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:33:20,279 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:33:20,279 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:33:20,279 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:33:20,280 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:33:20,280 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:33:20,280 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:33:20,335 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:33:20,345 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:33:20,353 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:33:20,353 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:33:20,376 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55441 (auto-detected)
+2016-05-24 19:33:20,379 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:33:20,380 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x8575f21357ee72d4 (took 9 ms)
+2016-05-24 19:33:20,403 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:33:20,404 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:33:20,405 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:33:20,405 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:33:20,411 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:33:20,411 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:33:20,411 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:33:20,823 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:33:20,844 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:35:16,357 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:35:16,362 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:35:16,364 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:35:16,379 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:35:16,401 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:35:16,401 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:35:16,401 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:35:16,402 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:35:16,402 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:35:16,402 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:35:16,402 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:35:16,403 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:35:16,403 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:35:16,403 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:35:16,404 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:35:16,404 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:35:16,404 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:35:16,404 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:35:16,405 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:35:16,462 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:35:16,472 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:35:16,478 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:35:16,479 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:35:16,501 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55454 (auto-detected)
+2016-05-24 19:35:16,505 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:35:16,505 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xd732817d47d32a24 (took 9 ms)
+2016-05-24 19:35:16,529 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:35:16,529 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:35:16,529 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:35:16,530 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:35:16,536 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:35:16,537 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:35:16,537 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:35:16,960 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:35:16,981 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:36:12,145 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:36:12,149 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:36:12,151 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:36:12,169 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:36:12,192 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:36:12,193 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:36:12,193 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:36:12,193 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:36:12,194 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:36:12,194 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:36:12,194 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:36:12,195 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:36:12,195 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:36:12,195 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:36:12,195 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:36:12,196 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:36:12,196 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:36:12,196 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:36:12,196 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:36:12,253 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:36:12,263 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:36:12,271 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:36:12,272 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:36:12,293 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55461 (auto-detected)
+2016-05-24 19:36:12,295 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:36:12,296 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x59ae08058070b1b5 (took 10 ms)
+2016-05-24 19:36:12,316 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:36:12,317 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:36:12,318 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:36:12,318 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:36:12,324 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:36:12,324 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:36:12,324 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:36:12,764 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:36:12,782 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:36:52,453 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:36:52,458 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:36:52,459 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:36:52,475 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:36:52,498 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:36:52,498 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:36:52,498 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:36:52,499 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:36:52,499 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:36:52,499 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:36:52,500 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:36:52,500 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:36:52,500 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:36:52,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:36:52,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:36:52,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:36:52,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:36:52,502 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:36:52,502 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:36:52,560 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:36:52,570 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:36:52,575 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:36:52,576 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:36:52,596 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55465 (auto-detected)
+2016-05-24 19:36:52,599 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:36:52,599 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x224e7b5d03286bbf (took 8 ms)
+2016-05-24 19:36:52,618 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:36:52,618 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:36:52,618 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:36:52,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:36:52,625 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:36:52,625 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:36:52,625 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:36:53,063 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:36:53,080 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:37:30,171 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:37:30,175 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:37:30,177 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:37:30,193 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:37:30,217 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:37:30,217 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:37:30,218 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:37:30,218 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:37:30,219 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:37:30,219 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:37:30,219 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:37:30,220 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:37:30,220 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:37:30,220 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:37:30,220 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:37:30,221 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:37:30,221 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:37:30,221 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:37:30,221 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:37:30,278 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:37:30,288 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:37:30,295 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:37:30,295 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:37:30,316 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55470 (auto-detected)
+2016-05-24 19:37:30,319 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:37:30,319 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x6781df3ff82c754b (took 9 ms)
+2016-05-24 19:37:30,340 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:37:30,341 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:37:30,347 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:37:30,347 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:37:30,347 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:37:30,830 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:37:30,849 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:39:02,254 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:39:02,258 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:39:02,260 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:39:02,277 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:39:02,299 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:39:02,299 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:39:02,299 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:39:02,300 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:39:02,300 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:39:02,301 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:39:02,301 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:39:02,301 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:39:02,301 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:39:02,301 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:39:02,302 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:39:02,302 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:39:02,302 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:39:02,303 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:39:02,303 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:39:02,361 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:39:02,371 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:39:02,380 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:39:02,380 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:39:02,403 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55483 (auto-detected)
+2016-05-24 19:39:02,405 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:39:02,406 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x3eafda0d25fadbfb (took 9 ms)
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:39:02,425 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:39:02,426 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:39:02,426 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:39:02,431 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:39:02,432 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:39:02,432 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:39:02,900 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:39:02,919 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:42:10,051 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:42:10,055 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:42:10,057 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:42:10,072 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:42:10,093 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:42:10,094 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:42:10,094 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:42:10,095 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:42:10,095 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:42:10,095 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:42:10,096 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:42:10,096 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:42:10,096 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:42:10,097 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:42:10,097 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:42:10,097 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:42:10,097 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:42:10,098 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:42:10,098 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:42:10,155 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:42:10,165 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:42:10,173 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:42:10,174 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:42:10,196 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55525 (auto-detected)
+2016-05-24 19:42:10,199 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:42:10,200 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x5351c7d0938f202f (took 9 ms)
+2016-05-24 19:42:10,222 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:42:10,222 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:42:10,222 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:42:10,222 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:42:10,222 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:42:10,222 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:42:10,223 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:42:10,223 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:42:10,223 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:42:10,223 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:42:10,229 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:42:10,229 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:42:10,229 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:42:13,715 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:42:13,720 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:42:13,721 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:42:13,737 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:42:13,759 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:42:13,760 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:42:13,760 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:42:13,760 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:42:13,761 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:42:13,761 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:42:13,761 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:42:13,762 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:42:13,762 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:42:13,762 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:42:13,763 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:42:13,763 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:42:13,763 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:42:13,763 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:42:13,763 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:42:13,820 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:42:13,830 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:42:13,836 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:42:13,837 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:42:13,858 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55527 (auto-detected)
+2016-05-24 19:42:13,860 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:42:13,861 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xfacc2813d18f7364 (took 8 ms)
+2016-05-24 19:42:13,880 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:42:13,880 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:42:13,880 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:42:13,881 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:42:13,887 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:42:13,887 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:42:13,887 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:42:14,306 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:42:14,328 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:42:37,773 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:42:37,777 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:42:37,779 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:42:37,795 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:42:37,816 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:42:37,816 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:42:37,817 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:42:37,817 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:42:37,818 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:42:37,818 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:42:37,818 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:42:37,818 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:42:37,819 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:42:37,819 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:42:37,819 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:42:37,820 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:42:37,820 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:42:37,820 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:42:37,820 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:42:37,877 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:42:37,887 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:42:37,895 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:42:37,895 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:42:37,917 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55530 (auto-detected)
+2016-05-24 19:42:37,919 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:42:37,920 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x1ca728696514783a (took 8 ms)
+2016-05-24 19:42:37,942 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:42:37,942 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:42:37,942 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:42:37,942 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:42:37,942 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:42:37,943 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:42:37,943 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:42:37,943 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:42:37,943 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:42:37,943 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:42:37,949 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:42:37,949 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:42:37,949 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:42:38,371 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:42:38,389 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:42:56,722 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:42:56,726 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:42:56,728 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:42:56,743 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:42:56,765 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:42:56,766 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:42:56,766 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:42:56,766 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:42:56,767 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:42:56,767 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:42:56,767 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:42:56,768 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:42:56,768 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:42:56,768 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:42:56,769 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:42:56,769 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:42:56,769 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:42:56,769 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:42:56,770 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:42:56,825 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:42:56,835 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:42:56,843 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:42:56,843 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:42:56,863 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55533 (auto-detected)
+2016-05-24 19:42:56,867 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:42:56,867 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xf2358da6a48379ba (took 9 ms)
+2016-05-24 19:42:56,887 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:42:56,887 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:42:56,887 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:42:56,887 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:42:56,887 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:42:56,888 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:42:56,888 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:42:56,888 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:42:56,888 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:42:56,888 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:42:56,894 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:42:56,894 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:42:56,894 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:42:57,360 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:42:57,377 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:43:20,711 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:43:20,715 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:43:20,717 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:43:20,733 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:43:20,755 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:43:20,755 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:43:20,756 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:43:20,756 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:43:20,757 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:43:20,757 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:43:20,757 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:43:20,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:43:20,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:43:20,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:43:20,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:43:20,759 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:43:20,759 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:43:20,759 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:43:20,759 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:43:20,816 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:43:20,826 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:43:20,834 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:43:20,835 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:43:20,858 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55536 (auto-detected)
+2016-05-24 19:43:20,862 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:43:20,862 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x207f6d729a685a17 (took 9 ms)
+2016-05-24 19:43:20,882 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:43:20,882 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:43:20,882 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:43:20,883 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:43:20,889 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:43:20,889 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:43:20,889 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:43:21,330 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:43:21,351 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 19:43:30,101 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 19:43:30,105 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 19:43:30,107 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 19:43:30,123 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 19:43:30,144 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 19:43:30,145 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 19:43:30,145 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 19:43:30,145 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 19:43:30,146 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 19:43:30,146 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 19:43:30,146 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 19:43:30,146 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 19:43:30,147 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 19:43:30,147 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 19:43:30,147 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 19:43:30,148 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 19:43:30,148 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 19:43:30,148 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 19:43:30,149 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 19:43:30,204 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 19:43:30,214 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 19:43:30,221 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 19:43:30,221 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 19:43:30,242 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55538 (auto-detected)
+2016-05-24 19:43:30,245 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 19:43:30,245 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x60d7a69b4fcecae6 (took 9 ms)
+2016-05-24 19:43:30,264 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 19:43:30,265 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 19:43:30,271 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 19:43:30,271 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 19:43:30,271 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 19:43:30,674 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 19:43:30,694 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:12:35,663 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:12:35,667 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:12:35,668 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:12:35,684 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:12:35,705 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:12:35,705 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:12:35,706 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:12:35,706 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:12:35,707 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:12:35,707 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:12:35,707 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:12:35,708 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:12:35,708 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:12:35,708 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:12:35,708 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:12:35,709 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:12:35,709 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:12:35,710 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:12:35,710 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:12:35,765 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:12:35,776 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:12:35,784 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:12:35,784 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:12:35,805 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55719 (auto-detected)
+2016-05-24 20:12:35,808 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:12:35,808 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x3100243ce90ace37 (took 9 ms)
+2016-05-24 20:12:35,827 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:12:35,827 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:12:35,828 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:12:35,834 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:12:35,834 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:12:35,834 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:12:36,303 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:12:36,322 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:13:38,070 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:13:38,074 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:13:38,076 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:13:38,093 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:13:38,117 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:13:38,117 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:13:38,117 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:13:38,118 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:13:38,118 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:13:38,118 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:13:38,119 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:13:38,119 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:13:38,120 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:13:38,120 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:13:38,120 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:13:38,120 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:13:38,121 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:13:38,121 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:13:38,122 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:13:38,178 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:13:38,188 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:13:38,194 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:13:38,194 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:13:38,214 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55732 (auto-detected)
+2016-05-24 20:13:38,217 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:13:38,217 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xf58a95b237fce016 (took 9 ms)
+2016-05-24 20:13:38,236 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:13:38,236 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:13:38,237 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:13:38,237 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:13:38,237 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:13:38,237 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:13:38,237 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:13:38,238 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:13:38,238 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:13:38,238 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:13:38,244 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:13:38,245 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:13:38,245 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:13:38,697 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:13:38,720 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:14:06,289 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:14:06,294 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:14:06,295 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:14:06,311 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:14:06,333 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:14:06,333 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:14:06,334 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:14:06,334 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:14:06,334 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:14:06,335 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:14:06,335 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:14:06,335 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:14:06,335 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:14:06,336 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:14:06,336 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:14:06,336 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:14:06,336 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:14:06,337 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:14:06,337 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:14:06,394 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:14:06,403 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:14:06,411 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:14:06,412 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:14:06,433 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55735 (auto-detected)
+2016-05-24 20:14:06,436 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:14:06,436 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xf79f0e90c2cafbe4 (took 9 ms)
+2016-05-24 20:14:06,456 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:14:06,456 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:14:06,456 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:14:06,456 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:14:06,456 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:14:06,457 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:14:06,457 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:14:06,457 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:14:06,457 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:14:06,457 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:14:06,463 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:14:06,463 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:14:06,463 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:14:06,939 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:14:06,958 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:14:57,456 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:14:57,460 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:14:57,462 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:14:57,477 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:14:57,499 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:14:57,499 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:14:57,499 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:14:57,499 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:14:57,500 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:14:57,500 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:14:57,500 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:14:57,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:14:57,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:14:57,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:14:57,501 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:14:57,502 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:14:57,502 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:14:57,502 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:14:57,502 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:14:57,558 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:14:57,568 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:14:57,575 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:14:57,576 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:14:57,596 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55742 (auto-detected)
+2016-05-24 20:14:57,599 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:14:57,599 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x80cb8aea35e6897d (took 8 ms)
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:14:57,619 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:14:57,620 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:14:57,620 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:14:57,620 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:14:57,625 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:14:57,626 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:14:57,626 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:14:58,100 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:14:58,117 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:15:37,590 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:15:37,595 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:15:37,596 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:15:37,612 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:15:37,633 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:15:37,634 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:15:37,634 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:15:37,634 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:15:37,635 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:15:37,635 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:15:37,635 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:15:37,635 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:15:37,636 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:15:37,636 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:15:37,636 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:15:37,636 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:15:37,637 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:15:37,637 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:15:37,637 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:15:37,693 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:15:37,703 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:15:37,711 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:15:37,711 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:15:37,734 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55748 (auto-detected)
+2016-05-24 20:15:37,737 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:15:37,738 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xfe714bd92ed8f6e4 (took 9 ms)
+2016-05-24 20:15:37,758 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:15:37,758 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:15:37,758 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:15:37,758 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:15:37,758 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:15:37,758 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:15:37,759 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:15:37,759 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:15:37,759 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:15:37,759 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:15:37,764 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:15:37,765 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:15:37,765 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:15:38,236 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:15:38,254 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:16:14,194 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:16:14,198 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:16:14,200 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:16:14,215 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:16:14,236 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:16:14,236 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:16:14,236 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:16:14,236 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:16:14,237 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:16:14,237 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:16:14,237 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:16:14,238 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:16:14,238 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:16:14,238 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:16:14,238 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:16:14,239 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:16:14,239 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:16:14,239 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:16:14,239 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:16:14,295 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:16:14,305 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:16:14,313 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:16:14,313 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:16:14,333 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55752 (auto-detected)
+2016-05-24 20:16:14,337 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:16:14,337 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xda1ac695c50fbe37 (took 8 ms)
+2016-05-24 20:16:14,357 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:16:14,357 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:16:14,357 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:16:14,357 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:16:14,357 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:16:14,357 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:16:14,358 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:16:14,358 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:16:14,358 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:16:14,358 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:16:14,363 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:16:14,364 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:16:14,364 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:16:14,827 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:16:14,845 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:16:53,476 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:16:53,480 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:16:53,482 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:16:53,498 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:16:53,519 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:16:53,519 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:16:53,519 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:16:53,520 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:16:53,520 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:16:53,520 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:16:53,520 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:16:53,521 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:16:53,521 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:16:53,521 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:16:53,522 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:16:53,522 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:16:53,522 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:16:53,522 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:16:53,522 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:16:53,577 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:16:53,587 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:16:53,595 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:16:53,595 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:16:53,616 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55757 (auto-detected)
+2016-05-24 20:16:53,619 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:16:53,620 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x6d2149baf7afb01c (took 9 ms)
+2016-05-24 20:16:53,639 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:16:53,639 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:16:53,639 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:16:53,639 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:16:53,639 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:16:53,639 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:16:53,640 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:16:53,640 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:16:53,640 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:16:53,640 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:16:53,646 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:16:53,646 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:16:53,646 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:16:54,191 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:16:54,208 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:17:21,945 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:17:21,949 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:17:21,950 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:17:21,966 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:17:21,988 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:17:21,988 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:17:21,989 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:17:21,989 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:17:21,990 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:17:21,990 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:17:21,990 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:17:21,990 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:17:21,991 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:17:21,991 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:17:21,991 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:17:21,991 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:17:21,992 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:17:21,992 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:17:21,992 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:17:22,048 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:17:22,058 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:17:22,065 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:17:22,066 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:17:22,087 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55761 (auto-detected)
+2016-05-24 20:17:22,091 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:17:22,091 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x46ef3e1bd40552fc (took 9 ms)
+2016-05-24 20:17:22,111 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:17:22,111 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:17:22,111 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:17:22,111 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:17:22,111 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:17:22,111 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:17:22,112 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:17:22,112 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:17:22,112 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:17:22,112 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:17:22,117 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:17:22,118 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:17:22,118 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:17:22,584 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:17:22,601 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:17:43,402 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:17:43,406 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:17:43,408 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:17:43,424 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:17:43,445 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:17:43,445 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:17:43,446 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:17:43,446 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:17:43,447 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:17:43,447 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:17:43,447 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:17:43,447 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:17:43,448 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:17:43,448 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:17:43,448 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:17:43,448 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:17:43,448 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:17:43,449 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:17:43,449 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:17:43,505 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:17:43,514 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:17:43,522 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:17:43,523 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:17:43,543 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55764 (auto-detected)
+2016-05-24 20:17:43,547 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:17:43,547 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x5dd4cd1400cc9edc (took 9 ms)
+2016-05-24 20:17:43,566 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:17:43,567 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:17:43,567 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:17:43,567 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:17:43,567 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:17:43,567 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:17:43,567 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:17:43,568 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:17:43,568 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:17:43,568 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:17:43,574 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:17:43,574 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:17:43,574 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:17:44,041 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:17:44,059 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:18:05,603 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:18:05,608 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:18:05,609 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:18:05,624 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:18:05,645 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:18:05,646 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:18:05,646 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:18:05,646 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:18:05,647 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:18:05,647 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:18:05,647 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:18:05,647 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:18:05,648 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:18:05,648 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:18:05,648 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:18:05,648 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:18:05,649 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:18:05,649 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:18:05,649 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:18:05,705 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:18:05,715 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:18:05,721 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:18:05,722 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:18:05,742 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55767 (auto-detected)
+2016-05-24 20:18:05,744 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:18:05,745 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xd1c8023dba52aa2f (took 8 ms)
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:18:05,764 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:18:05,765 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:18:05,765 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:18:05,770 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:18:05,771 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:18:05,771 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:18:06,228 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:18:06,249 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:19:10,299 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:19:10,303 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:19:10,304 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:19:10,319 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:19:10,341 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:19:10,341 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:19:10,342 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:19:10,342 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:19:10,343 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:19:10,343 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:19:10,343 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:19:10,343 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:19:10,344 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:19:10,344 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:19:10,344 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:19:10,344 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:19:10,345 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:19:10,345 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:19:10,345 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:19:10,402 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:19:10,412 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:19:10,420 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:19:10,421 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:19:10,441 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55774 (auto-detected)
+2016-05-24 20:19:10,444 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:19:10,445 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x5c762ed9301b2b64 (took 9 ms)
+2016-05-24 20:19:10,465 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:19:10,466 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:19:10,467 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:19:10,472 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:19:10,473 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:19:10,473 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:19:10,913 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:19:10,934 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:20:14,187 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:20:14,192 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:20:14,193 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:20:14,209 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:20:14,230 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:20:14,231 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:20:14,231 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:20:14,231 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:20:14,232 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:20:14,232 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:20:14,232 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:20:14,233 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:20:14,233 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:20:14,233 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:20:14,234 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:20:14,234 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:20:14,234 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:20:14,234 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:20:14,235 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:20:14,291 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:20:14,301 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:20:14,307 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:20:14,307 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:20:14,331 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55781 (auto-detected)
+2016-05-24 20:20:14,334 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:20:14,334 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x518e3c17ce5cb088 (took 9 ms)
+2016-05-24 20:20:14,354 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:20:14,355 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:20:14,356 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:20:14,361 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:20:14,362 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:20:14,362 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:20:14,766 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:20:14,788 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:20:47,707 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:20:47,712 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:20:47,713 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:20:47,729 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:20:47,750 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:20:47,750 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:20:47,751 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:20:47,751 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:20:47,752 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:20:47,752 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:20:47,752 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:20:47,752 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:20:47,753 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:20:47,753 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:20:47,753 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:20:47,753 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:20:47,753 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:20:47,754 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:20:47,754 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:20:47,810 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:20:47,820 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:20:47,828 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:20:47,828 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:20:47,849 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55785 (auto-detected)
+2016-05-24 20:20:47,852 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:20:47,853 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xbf56e3678f7d36f7 (took 8 ms)
+2016-05-24 20:20:47,872 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:20:47,872 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:20:47,872 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:20:47,872 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:20:47,872 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:20:47,873 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:20:47,873 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:20:47,873 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:20:47,873 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:20:47,873 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:20:47,879 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:20:47,879 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:20:47,879 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:20:48,290 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:20:48,309 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:21:16,538 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:21:16,543 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:21:16,544 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:21:16,561 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:21:16,584 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:21:16,585 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:21:16,585 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:21:16,585 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:21:16,586 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:21:16,586 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:21:16,586 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:21:16,586 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:21:16,587 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:21:16,587 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:21:16,587 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:21:16,588 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:21:16,588 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:21:16,588 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:21:16,588 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:21:16,645 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:21:16,655 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:21:16,663 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:21:16,663 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:21:16,684 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55789 (auto-detected)
+2016-05-24 20:21:16,687 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:21:16,688 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x4e9ac64251324b87 (took 9 ms)
+2016-05-24 20:21:16,707 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:21:16,707 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:21:16,707 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:21:16,707 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:21:16,707 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:21:16,708 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:21:16,708 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:21:16,708 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:21:16,708 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:21:16,708 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:21:16,714 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:21:16,714 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:21:16,714 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:21:17,135 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:21:17,153 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:23:43,307 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:23:43,311 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:23:43,312 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:23:43,328 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:23:43,349 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:23:43,350 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:23:43,350 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:23:43,350 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:23:43,351 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:23:43,351 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:23:43,351 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:23:43,352 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:23:43,352 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:23:43,352 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:23:43,352 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:23:43,353 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:23:43,353 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:23:43,353 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:23:43,353 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:23:43,408 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:23:43,418 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:23:43,425 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:23:43,426 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:23:43,446 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55816 (auto-detected)
+2016-05-24 20:23:43,449 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:23:43,449 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xcf183ff8d6932ebe (took 8 ms)
+2016-05-24 20:23:43,468 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:23:43,468 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:23:43,468 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:23:43,469 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:23:43,475 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:23:43,475 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:23:43,475 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:23:43,888 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:23:43,907 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:23:58,271 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:23:58,275 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:23:58,276 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:23:58,292 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:23:58,313 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:23:58,313 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:23:58,314 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:23:58,314 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:23:58,315 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:23:58,315 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:23:58,315 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:23:58,315 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:23:58,316 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:23:58,316 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:23:58,317 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:23:58,317 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:23:58,317 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:23:58,318 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:23:58,318 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:23:58,373 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:23:58,383 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:23:58,391 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:23:58,391 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:23:58,411 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55818 (auto-detected)
+2016-05-24 20:23:58,414 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:23:58,414 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xc907651a5b8f6e3c (took 9 ms)
+2016-05-24 20:23:58,433 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:23:58,433 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:23:58,434 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:23:58,440 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:23:58,440 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:23:58,440 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:23:58,872 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:23:58,891 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:24:32,638 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:24:32,643 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:24:32,644 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:24:32,660 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:24:32,681 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:24:32,681 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:24:32,682 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:24:32,682 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:24:32,683 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:24:32,683 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:24:32,683 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:24:32,683 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:24:32,684 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:24:32,684 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:24:32,684 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:24:32,684 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:24:32,684 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:24:32,685 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:24:32,685 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:24:32,742 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:24:32,751 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:24:32,757 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:24:32,758 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:24:32,778 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55824 (auto-detected)
+2016-05-24 20:24:32,781 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:24:32,781 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xe2fc5a4ab84f12b8 (took 9 ms)
+2016-05-24 20:24:32,800 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:24:32,800 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:24:32,800 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:24:32,801 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:24:32,807 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:24:32,807 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:24:32,807 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:24:33,231 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:24:33,250 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:25:11,738 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:25:11,743 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:25:11,744 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:25:11,762 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:25:11,783 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:25:11,783 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:25:11,784 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:25:11,784 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:25:11,785 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:25:11,785 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:25:11,785 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:25:11,786 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:25:11,786 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:25:11,786 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:25:11,787 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:25:11,787 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:25:11,787 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:25:11,787 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:25:11,787 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:25:11,849 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:25:11,859 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:25:11,867 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:25:11,867 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:25:11,891 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55829 (auto-detected)
+2016-05-24 20:25:11,894 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:25:11,895 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0xcfeab0ed83fb26ee (took 9 ms)
+2016-05-24 20:25:11,915 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:25:11,915 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:25:11,915 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:25:11,915 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:25:11,915 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:25:11,915 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:25:11,916 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:25:11,916 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:25:11,916 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:25:11,916 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:25:11,921 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:25:11,922 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:25:11,922 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:25:12,373 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:25:12,391 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:25:49,714 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:25:49,718 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:25:49,720 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:25:49,735 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:25:49,756 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:25:49,756 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:25:49,757 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:25:49,757 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:25:49,757 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:25:49,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:25:49,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:25:49,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:25:49,758 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:25:49,759 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:25:49,759 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:25:49,759 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:25:49,759 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:25:49,760 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:25:49,760 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:25:49,816 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:25:49,826 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:25:49,832 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:25:49,832 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:25:49,853 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55834 (auto-detected)
+2016-05-24 20:25:49,855 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:25:49,856 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x5959355d131f0db7 (took 8 ms)
+2016-05-24 20:25:49,875 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:25:49,875 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:25:49,875 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:25:49,875 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:25:49,876 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:25:49,876 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:25:49,876 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:25:49,876 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:25:49,876 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:25:49,876 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:25:49,882 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:25:49,882 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:25:49,882 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:25:50,326 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:25:50,343 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
+2016-05-24 20:26:29,242 DEBUG [main] i.n.u.i.l.InternalLoggerFactory [Slf4JLogger.java:71] Using SLF4J as the default logging framework
+2016-05-24 20:26:29,246 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.level: simple
+2016-05-24 20:26:29,248 DEBUG [main] i.n.u.ResourceLeakDetector [Slf4JLogger.java:81] -Dio.netty.leakDetection.maxRecords: 4
+2016-05-24 20:26:29,263 DEBUG [main] i.n.c.MultithreadEventLoopGroup [Slf4JLogger.java:76] -Dio.netty.eventLoopThreads: 16
+2016-05-24 20:26:29,288 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Buffer.address: available
+2016-05-24 20:26:29,289 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] sun.misc.Unsafe.theUnsafe: available
+2016-05-24 20:26:29,289 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:71] sun.misc.Unsafe.copyMemory: available
+2016-05-24 20:26:29,290 DEBUG [main] i.n.u.i.PlatformDependent0 [Slf4JLogger.java:76] java.nio.Bits.unaligned: true
+2016-05-24 20:26:29,290 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] Java version: 8
+2016-05-24 20:26:29,290 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noUnsafe: false
+2016-05-24 20:26:29,290 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] sun.misc.Unsafe: available
+2016-05-24 20:26:29,291 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noJavassist: false
+2016-05-24 20:26:29,291 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] Javassist: unavailable
+2016-05-24 20:26:29,291 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:71] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+2016-05-24 20:26:29,292 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.tmpdir: /var/folders/nw/fk_6kcd17ls0zlmy92qmd2d80000gn/T (java.io.tmpdir)
+2016-05-24 20:26:29,292 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2016-05-24 20:26:29,292 DEBUG [main] i.n.u.i.PlatformDependent [Slf4JLogger.java:76] -Dio.netty.noPreferDirect: false
+2016-05-24 20:26:29,292 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.noKeySetOptimization: false
+2016-05-24 20:26:29,293 DEBUG [main] i.n.c.n.NioEventLoop [Slf4JLogger.java:76] -Dio.netty.selectorAutoRebuildThreshold: 512
+2016-05-24 20:26:29,349 DEBUG [main] i.n.r.d.DnsNameResolver [Slf4JLogger.java:71] -Djava.net.preferIPv6Addresses: false
+2016-05-24 20:26:29,360 DEBUG [main] i.n.r.d.DnsServerAddresses [Slf4JLogger.java:76] Default DNS servers: [/192.168.0.1:53] (sun.net.dns.ResolverConfiguration)
+2016-05-24 20:26:29,366 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:86] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+2016-05-24 20:26:29,366 DEBUG [main] i.n.u.NetUtil [Slf4JLogger.java:81] /proc/sys/net/core/somaxconn: 128 (non-existent)
+2016-05-24 20:26:29,388 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.processId: 55840 (auto-detected)
+2016-05-24 20:26:29,392 DEBUG [main] i.n.c.DefaultChannelId [Slf4JLogger.java:76] -Dio.netty.machineId: 98:5a:eb:ff:fe:e3:e8:e4 (auto-detected)
+2016-05-24 20:26:29,392 DEBUG [main] i.n.u.i.ThreadLocalRandom [Slf4JLogger.java:71] -Dio.netty.initialSeedUniquifier: 0x58e9304342252155 (took 9 ms)
+2016-05-24 20:26:29,411 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numHeapArenas: 16
+2016-05-24 20:26:29,411 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.numDirectArenas: 16
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.pageSize: 8192
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxOrder: 11
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.chunkSize: 16777216
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.tinyCacheSize: 512
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.smallCacheSize: 256
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.normalCacheSize: 64
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2016-05-24 20:26:29,412 DEBUG [main] i.n.b.PooledByteBufAllocator [Slf4JLogger.java:76] -Dio.netty.allocator.cacheTrimInterval: 8192
+2016-05-24 20:26:29,418 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.allocator.type: pooled
+2016-05-24 20:26:29,418 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.threadLocalDirectBufferSize: 65536
+2016-05-24 20:26:29,418 DEBUG [main] i.n.b.ByteBufUtil [Slf4JLogger.java:76] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2016-05-24 20:26:29,863 DEBUG [vert.x-eventloop-thread-2] i.n.b.AbstractByteBuf [Slf4JLogger.java:81] -Dio.netty.buffer.bytebuf.checkAccessible: true
+2016-05-24 20:26:29,880 DEBUG [vert.x-eventloop-thread-2] i.n.u.Recycler [Slf4JLogger.java:76] -Dio.netty.recycler.maxCapacity: 262144
