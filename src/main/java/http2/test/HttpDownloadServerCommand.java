@@ -3,7 +3,9 @@ package http2.test;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 import io.vertx.core.Vertx;
+import io.vertx.core.http.Http2Settings;
 import io.vertx.core.http.HttpServer;
+import io.vertx.core.http.HttpServerOptions;
 import io.vertx.core.http.HttpServerResponse;
 import io.vertx.core.streams.Pump;
 
@@ -19,13 +21,17 @@ public class HttpDownloadServerCommand extends CommandBase {
   @Parameter(names = "--think-time")
   public long thinkTime = 40;
 
+  @Parameter(names = "--concurrency")
+  public long concurrency = -1;
+
   public static void main(String[] args) throws Exception {
     new HttpDownloadServerCommand().run();
   }
 
   public void run() throws Exception {
     Vertx vertx = Vertx.vertx();
-    HttpServer server = vertx.createHttpServer();
+    HttpServer server = vertx.createHttpServer(new HttpServerOptions().setInitialSettings(new Http2Settings().
+        setMaxConcurrentStreams(concurrency == -1 ? Http2Settings.DEFAULT_MAX_CONCURRENT_STREAMS : concurrency)));
     server.connectionHandler(conn -> {
       conn.closeHandler(v -> {
 //        System.out.println("closed");
