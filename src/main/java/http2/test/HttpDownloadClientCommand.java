@@ -50,15 +50,19 @@ public class HttpDownloadClientCommand extends CommandBase {
 
   public void run() throws Exception {
     Vertx vertx = Vertx.vertx();
-    HttpClient client = vertx.createHttpClient(new HttpClientOptions()
-//        .setLogActivity(true)
+    HttpClientOptions options = new HttpClientOptions()
         .setInitialSettings(new Http2Settings().setInitialWindowSize(windowSize))
         .setH2cUpgrade(false)
         .setProtocolVersion(protocol)
         .setPipelining(pipelining)
         .setKeepAlive(keepAlive)
-        .setMaxPoolSize(poolSize)
-        .setMaxStreams(concurrency));
+        .setHttp2MaxStreams(concurrency);
+    if (protocol == HttpVersion.HTTP_2) {
+      options.setHttp2MaxPoolSize(poolSize);
+    } else {
+      options.setMaxPoolSize(poolSize);
+    }
+    HttpClient client = vertx.createHttpClient(options);
     int size = requests;
     LongAdder received = new LongAdder();
     AtomicInteger done = new AtomicInteger();
@@ -74,7 +78,7 @@ public class HttpDownloadClientCommand extends CommandBase {
           });
           resp.endHandler(v2 -> {
             if (done.incrementAndGet() == size) {
-              System.out.println("finished in " + (System.currentTimeMillis() - startTime) / 1000);
+              System.out.println("finished in %.2f" + (System.currentTimeMillis() - startTime) / 1000D);
               doneLatch.countDown();
               vertx.cancelTimer(timerId);
             }
