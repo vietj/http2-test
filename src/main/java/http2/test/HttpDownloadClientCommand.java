@@ -68,7 +68,7 @@ public class HttpDownloadClientCommand extends CommandBase {
     AtomicInteger done = new AtomicInteger();
     long startTime = System.currentTimeMillis();
     long timerId = vertx.setPeriodic(1000, id -> {
-      System.out.println("" + done.get() + "/" + size + " " + (received.longValue() * 1000) / (1024 * (System.currentTimeMillis() - startTime)) + " kb/s");
+      System.out.format("%d/%d %d kb/s%n", done.get(), size, (received.longValue() * 1000) / (1024 * (System.currentTimeMillis() - startTime)));
     });
     vertx.runOnContext(v -> {
       for (int i = 0;i < size;i++) {
@@ -78,7 +78,7 @@ public class HttpDownloadClientCommand extends CommandBase {
           });
           resp.endHandler(v2 -> {
             if (done.incrementAndGet() == size) {
-              System.out.println("finished in %.2f" + (System.currentTimeMillis() - startTime) / 1000D);
+              System.out.format("finished in %.2f%n s", (System.currentTimeMillis() - startTime) / 1000D);
               doneLatch.countDown();
               vertx.cancelTimer(timerId);
             }
