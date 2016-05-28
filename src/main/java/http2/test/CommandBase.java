@@ -28,6 +28,12 @@ public abstract class CommandBase {
   @Parameter(names = "--open-ssl")
   public boolean openSSL;
 
+  @Parameter(names = "--send-buffer-size")
+  public int sendBufferSize = -1;
+
+  @Parameter(names = "--receive-buffer-size")
+  public int receiveBufferSize = -1;
+
   public abstract void run() throws Exception;
 
   protected final <T> T start(Startable<T> server) throws Exception {

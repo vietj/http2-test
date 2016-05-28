@@ -40,7 +40,7 @@ public class NetThroughputCommand extends CommandBase {
       so.closeHandler(v -> {
         System.out.println("closed");
       });
-      SenderStream stream = new SenderStream();
+      SenderStream stream = new SenderStream(1000 * 1000);
       Pump pump = Pump.pump(stream, so);
       pump.start();
       stream.send();

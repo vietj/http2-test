@@ -30,8 +30,11 @@ public class HttpDownloadServerCommand extends CommandBase {
 
   public void run() throws Exception {
     Vertx vertx = Vertx.vertx();
-    HttpServer server = vertx.createHttpServer(new HttpServerOptions().setInitialSettings(new Http2Settings().
-        setMaxConcurrentStreams(concurrency == -1 ? Http2Settings.DEFAULT_MAX_CONCURRENT_STREAMS : concurrency)));
+    HttpServerOptions options = new HttpServerOptions().setInitialSettings(new Http2Settings().
+        setMaxConcurrentStreams(concurrency == -1 ? Http2Settings.DEFAULT_MAX_CONCURRENT_STREAMS : concurrency));
+    options.setSendBufferSize(sendBufferSize);
+    options.setReceiveBufferSize(receiveBufferSize);
+    HttpServer server = vertx.createHttpServer(options);
     server.connectionHandler(conn -> {
       conn.closeHandler(v -> {
 //        System.out.println("closed");

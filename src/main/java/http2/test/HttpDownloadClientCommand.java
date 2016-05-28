@@ -56,6 +56,8 @@ public class HttpDownloadClientCommand extends CommandBase {
         .setProtocolVersion(protocol)
         .setPipelining(pipelining)
         .setKeepAlive(keepAlive)
+        .setSendBufferSize(sendBufferSize)
+        .setReceiveBufferSize(receiveBufferSize)
         .setHttp2MaxStreams(concurrency);
     if (protocol == HttpVersion.HTTP_2) {
       options.setHttp2MaxPoolSize(poolSize);
