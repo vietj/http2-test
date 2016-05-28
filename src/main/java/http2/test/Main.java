@@ -15,11 +15,13 @@ public class Main {
   public static void main(String[] args) throws Exception {
     JCommander jc = new JCommander(new MainCmd());
     NetThroughputCommand tcp = new NetThroughputCommand();
-    HttpDownloadServerCommand httpDownloadServer = new HttpDownloadServerCommand();
-    HttpDownloadClientCommand httpDownloadClient = new HttpDownloadClientCommand();
+    HttpBackendServerCommand httpBackendServer = new HttpBackendServerCommand();
+    HttpFrontendServerCommand httpFrontendServer = new HttpFrontendServerCommand();
+    HttpClientCommand httpClient = new HttpClientCommand();
     jc.addCommand("tcp", tcp);
-    jc.addCommand("http-download-server", httpDownloadServer);
-    jc.addCommand("http-download-client", httpDownloadClient);
+    jc.addCommand("http-backend", httpBackendServer);
+    jc.addCommand("http-frontend", httpFrontendServer);
+    jc.addCommand("http-client", httpClient);
     jc.parse(args);
     String cmd = jc.getParsedCommand();
     CommandBase command = null;
@@ -28,11 +30,14 @@ public class Main {
         case "tcp":
           command = tcp;
           break;
-        case "http-download-server":
-          command = httpDownloadServer;
+        case "http-backend":
+          command = httpBackendServer;
           break;
-        case "http-download-client":
-          command = httpDownloadClient;
+        case "http-frontend":
+          command = httpFrontendServer;
+          break;
+        case "http-client":
+          command = httpClient;
           break;
         default:
           break;

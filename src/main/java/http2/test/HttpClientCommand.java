@@ -6,10 +6,7 @@ import io.vertx.core.Vertx;
 import io.vertx.core.http.Http2Settings;
 import io.vertx.core.http.HttpClient;
 import io.vertx.core.http.HttpClientOptions;
-import io.vertx.core.http.HttpServer;
-import io.vertx.core.http.HttpServerResponse;
 import io.vertx.core.http.HttpVersion;
-import io.vertx.core.streams.Pump;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -19,7 +16,7 @@ import java.util.concurrent.atomic.LongAdder;
  * @author <a href="mailto:julien@julienviet.com">Julien Viet</a>
  */
 @Parameters()
-public class HttpDownloadClientCommand extends CommandBase {
+public class HttpClientCommand extends CommandBase {
 
   @Parameter(names = "--requests")
   public int requests = 100;
@@ -45,7 +42,7 @@ public class HttpDownloadClientCommand extends CommandBase {
   private final CountDownLatch doneLatch = new CountDownLatch(1);
 
   public static void main(String[] args) throws Exception {
-    new HttpDownloadClientCommand().run();
+    new HttpClientCommand().run();
   }
 
   public void run() throws Exception {
