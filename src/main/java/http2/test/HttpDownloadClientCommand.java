@@ -70,7 +70,7 @@ public class HttpDownloadClientCommand extends CommandBase {
     long timerId = vertx.setPeriodic(1000, id -> {
       System.out.format("%d/%d %d kb/s%n", done.get(), size, (received.longValue() * 1000) / (1024 * (System.currentTimeMillis() - startTime)));
     });
-    vertx.runOnContext(v -> {
+    vertx.runOnContext(v1 -> {
       for (int i = 0;i < size;i++) {
         client.getNow(port, host, "/", resp -> {
           resp.handler(buff -> {
@@ -78,9 +78,12 @@ public class HttpDownloadClientCommand extends CommandBase {
           });
           resp.endHandler(v2 -> {
             if (done.incrementAndGet() == size) {
-              System.out.format("finished in %.2f%n s", (System.currentTimeMillis() - startTime) / 1000D);
+              System.out.format("finished in %.2f s%n", (System.currentTimeMillis() - startTime) / 1000D);
               doneLatch.countDown();
               vertx.cancelTimer(timerId);
+              vertx.close(v3 -> {
+                System.exit(0);
+              });
             }
           });
         });
