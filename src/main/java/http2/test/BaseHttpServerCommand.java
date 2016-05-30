@@ -16,12 +16,6 @@ public abstract class BaseHttpServerCommand extends CommandBase {
   @Parameter(names = "--concurrency")
   public long concurrency = -1;
 
-  protected final Vertx vertx = Vertx.vertx(createOptions());
-
-  protected VertxOptions createOptions() {
-    return new VertxOptions();
-  }
-
   public void run() throws Exception {
     HttpServerOptions options = new HttpServerOptions().setInitialSettings(new Http2Settings().
         setMaxConcurrentStreams(concurrency == -1 ? Http2Settings.DEFAULT_MAX_CONCURRENT_STREAMS : concurrency));

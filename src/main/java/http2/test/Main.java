@@ -14,11 +14,13 @@ public class Main {
 
   public static void main(String[] args) throws Exception {
     JCommander jc = new JCommander(new MainCmd());
-    NetThroughputCommand tcp = new NetThroughputCommand();
+    NetClientCommand netClient = new NetClientCommand();
+    NetServerCommand netServer = new NetServerCommand();
     HttpBackendServerCommand httpBackendServer = new HttpBackendServerCommand();
     HttpFrontendServerCommand httpFrontendServer = new HttpFrontendServerCommand();
     HttpClientCommand httpClient = new HttpClientCommand();
-    jc.addCommand("tcp", tcp);
+    jc.addCommand("net-client", netClient);
+    jc.addCommand("net-server", netServer);
     jc.addCommand("http-backend", httpBackendServer);
     jc.addCommand("http-frontend", httpFrontendServer);
     jc.addCommand("http-client", httpClient);
@@ -27,8 +29,11 @@ public class Main {
     CommandBase command = null;
     if (cmd != null) {
       switch (cmd) {
-        case "tcp":
-          command = tcp;
+        case "net-client":
+          command = netClient;
+          break;
+        case "net-server":
+          command = netServer;
           break;
         case "http-backend":
           command = httpBackendServer;
