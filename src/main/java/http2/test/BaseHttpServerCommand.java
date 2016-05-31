@@ -1,8 +1,6 @@
 package http2.test;
 
 import com.beust.jcommander.Parameter;
-import io.vertx.core.Vertx;
-import io.vertx.core.VertxOptions;
 import io.vertx.core.http.Http2Settings;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.http.HttpServerOptions;

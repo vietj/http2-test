@@ -11,17 +11,19 @@ import io.vertx.core.streams.ReadStream;
  */
 public class SenderStream implements ReadStream<Buffer> {
 
-  private static final int CHUNK_SIZE = 512;
-  private static final Buffer data = Buffer.buffer(new byte[CHUNK_SIZE]);
-  private final long num;
+  private final int chunkSize;
+  private final Buffer data;
+  private final long length;
   private final Context context = Vertx.currentContext();
-  private boolean paused = false;
+  private boolean paused;
   private Handler<Buffer> dataHandler;
   private long sent = 0;
   private Handler<Void> endHandler;
 
-  public SenderStream(long length) {
-    this.num = length / CHUNK_SIZE;
+  public SenderStream(long length, int chunkSize) {
+    this.chunkSize = chunkSize;
+    this.data = Buffer.buffer(new byte[chunkSize]);
+    this.length = length;
   }
 
   @Override
@@ -37,14 +39,18 @@ public class SenderStream implements ReadStream<Buffer> {
 
   public void send() {
     if (!paused) {
-      if (sent < num || num < 0) {
-        sent += data.length();
-        dataHandler.handle(data);
+      if (sent < length) {
+        if (sent >= chunkSize) {
+          sent -= chunkSize;
+          dataHandler.handle(data);
+        } else {
+          dataHandler.handle(Buffer.buffer(new byte[(int)(length - sent)]));
+          sent = length;
+        }
         context.runOnContext(v -> {
           send();
         });
       } else {
-        paused = true;
         if (endHandler != null) {
           endHandler.handle(null);
         }

@@ -6,17 +6,22 @@ import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
 import io.vertx.core.streams.Pump;
 
+import java.math.BigInteger;
+
 /**
  * @author <a href="mailto:julien@julienviet.com">Julien Viet</a>
  */
 @Parameters()
 public class HttpBackendServerCommand extends BaseHttpServerCommand {
 
-  @Parameter(names = "--size")
-  public long size = 0;
+  @Parameter(names = "--length", description = "the length in bytes")
+  public String length = "0";
 
-  @Parameter(names = "--think-time")
-  public long thinkTime = 40;
+  @Parameter(names = "--chunk-size", description = "the chunk size in bytes")
+  public int chunkSize = 1024;
+
+  @Parameter(names = "--delay", description = "the delay in ms for sending the response")
+  public long delay = 40;
 
   public static void main(String[] args) throws Exception {
     new HttpBackendServerCommand().run();
@@ -25,8 +30,8 @@ public class HttpBackendServerCommand extends BaseHttpServerCommand {
   @Override
   protected void handle(HttpServerRequest req) {
     HttpServerResponse resp = req.response();
-    if (thinkTime > 0) {
-      vertx.setTimer(thinkTime, v -> {
+    if (delay > 0) {
+      vertx.setTimer(delay, v -> {
         handleResp(resp);
       });
     } else {
@@ -35,9 +40,10 @@ public class HttpBackendServerCommand extends BaseHttpServerCommand {
   }
 
   private void handleResp(HttpServerResponse resp) {
-    if (size > 0) {
+    long l = Utils.parseSize(length).longValue();
+    if (l > 0) {
       resp.setChunked(true);
-      SenderStream stream = new SenderStream(size);
+      SenderStream stream = new SenderStream(l, chunkSize);
       stream.endHandler(v -> {
         resp.end();
       });

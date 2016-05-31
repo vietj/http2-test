@@ -28,7 +28,7 @@ public class NetServerCommand extends CommandBase {
       });
       so.closeHandler(v -> {
       });
-      SenderStream stream = new SenderStream(1000 * 1000);
+      SenderStream stream = new SenderStream(1000 * 1000, 1024);
       Pump pump = Pump.pump(stream, so);
       pump.start();
       stream.send();
