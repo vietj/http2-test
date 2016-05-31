@@ -19,6 +19,7 @@ import io.vertx.core.spi.metrics.HttpClientMetrics;
 import io.vertx.core.spi.metrics.VertxMetrics;
 import org.HdrHistogram.Histogram;
 
+import java.io.PrintWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -48,12 +49,18 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
   private int frontRequests;
   private Histogram histogram = new Histogram(4);
   private Map<Object, SocketMetric> queuedStreams = new LinkedHashMap<>();
+  private AtomicInteger pendingRequests = new AtomicInteger();
+
+  public HttpFrontendServerCommand() throws Exception {
+  }
 
   public static void main(String[] args) throws Exception {
     new HttpFrontendServerCommand().run();
   }
 
   static class SocketMetric {
+    static volatile int serial = 0;
+    final int id = serial++;
     final AtomicInteger pendingResponses = new AtomicInteger();
     final AtomicInteger responsesCount = new AtomicInteger();
   }
@@ -68,82 +75,65 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
           @Override
           public HttpClientMetrics<SocketMetric, Void, SocketMetric, Void, Void> createMetrics(HttpClient client, HttpClientOptions options) {
             return new HttpClientMetrics<SocketMetric, Void, SocketMetric, Void, Void>() {
-              @Override
-              public SocketMetric requestBegin(Void endpointMetric, SocketMetric socketMetric, SocketAddress localAddress, SocketAddress remoteAddress, HttpClientRequest request) {
-                return socketMetric;
-              }
+
               @Override
               public SocketMetric connected(SocketAddress remoteAddress, String remoteName) {
                 SocketMetric socketMetric = new SocketMetric();
                 queuedStreams.put(socketMetric, socketMetric);
                 return socketMetric;
               }
+
+              @Override
+              public SocketMetric requestBegin(Void endpointMetric, SocketMetric socketMetric, SocketAddress localAddress, SocketAddress remoteAddress, HttpClientRequest request) {
+                return socketMetric;
+              }
+
               @Override
               public void requestEnd(SocketMetric socketMetric) {
                 queuedStreams.get(socketMetric).pendingResponses.incrementAndGet();
               }
+
               @Override
               public void responseBegin(SocketMetric socketMetric, HttpClientResponse response) {
                 socketMetric.pendingResponses.decrementAndGet();
               }
+
               @Override
               public void responseEnd(SocketMetric socketMetric, HttpClientResponse response) {
                 socketMetric.responsesCount.incrementAndGet();
               }
+
               @Override
               public void disconnected(SocketMetric socketMetric, SocketAddress remoteAddress) {
                 queuedStreams.remove(socketMetric);
               }
-              @Override
+
+              public Void enqueueRequest(Void endpointMetric) {
+                pendingRequests.incrementAndGet();
+                return null;
+              }
+
+              public void dequeueRequest(Void endpointMetric, Void taskMetric) {
+                pendingRequests.decrementAndGet();
+              }
+
               public Void createEndpoint(String host, int port, int maxPoolSize) {
                 return null;
               }
-              @Override
-              public void closeEndpoint(String host, int port, Void endpointMetric) {
-              }
-              @Override
-              public Void enqueueRequest(Void endpointMetric) {
-                return null;
-              }
-              @Override
-              public void dequeueRequest(Void endpointMetric, Void taskMetric) {
-              }
-              @Override
-              public void endpointConnected(Void endpointMetric, SocketMetric socketMetric) {
-              }
-              @Override
-              public void endpointDisconnected(Void endpointMetric, SocketMetric socketMetric) {
-              }
-              @Override
-              public SocketMetric responsePushed(Void endpointMetric, SocketMetric socketMetric, SocketAddress localAddress, SocketAddress remoteAddress, HttpClientRequest request) {
-                return null;
-              }
-              @Override
-              public void requestReset(SocketMetric requestMetric) {
-              }
-              @Override
-              public Void connected(Void endpointMetric, SocketMetric socketMetric, WebSocket webSocket) {
-                return null;
-              }
-              @Override
-              public void disconnected(Void webSocketMetric) {
-              }
-              @Override
-              public void bytesRead(SocketMetric socketMetric, SocketAddress remoteAddress, long numberOfBytes) {
-              }
-              @Override
-              public void bytesWritten(SocketMetric socketMetric, SocketAddress remoteAddress, long numberOfBytes) {
-              }
-              @Override
-              public void exceptionOccurred(SocketMetric socketMetric, SocketAddress remoteAddress, Throwable t) {
-              }
-              @Override
+              public void closeEndpoint(String host, int port, Void endpointMetric) { }
+              public void endpointConnected(Void endpointMetric, SocketMetric socketMetric) { }
+              public void endpointDisconnected(Void endpointMetric, SocketMetric socketMetric) { }
+              public SocketMetric responsePushed(Void endpointMetric, SocketMetric socketMetric, SocketAddress localAddress, SocketAddress remoteAddress, HttpClientRequest request) { return null; }
+              public void requestReset(SocketMetric requestMetric) { }
+              public Void connected(Void endpointMetric, SocketMetric socketMetric, WebSocket webSocket) { return null; }
+              public void disconnected(Void webSocketMetric) { }
+              public void bytesRead(SocketMetric socketMetric, SocketAddress remoteAddress, long numberOfBytes) { }
+              public void bytesWritten(SocketMetric socketMetric, SocketAddress remoteAddress, long numberOfBytes) { }
+              public void exceptionOccurred(SocketMetric socketMetric, SocketAddress remoteAddress, Throwable t) { }
               public boolean isEnabled() {
                 return true;
               }
-              @Override
-              public void close() {
-              }
+              public void close() { }
             };
           }
         };
@@ -175,7 +165,7 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
         if (buff.length() > 0) {
           buff.append(" - ");
         }
-        buff.append(stream.pendingResponses.get()).append("/").append(stream.responsesCount.get());
+        buff.append(stream.id).append("=").append(stream.pendingResponses.get()).append("/").append(stream.responsesCount.get());
       });
       String log = buff.toString();
       vertx.executeBlocking(fut -> {
