@@ -151,7 +151,7 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
     options.setProtocolVersion(backendProtocol);
     options.setH2cUpgrade(false);
     if (backendConcurrency > 0) {
-      options.setHttp2MaxStreams(backendConcurrency);
+      options.setHttp2MultiplexingLimit(backendConcurrency);
     }
     client = vertx.createHttpClient(options);
     vertx.setPeriodic(1000, timerID -> {

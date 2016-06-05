@@ -55,7 +55,7 @@ public class HttpClientCommand extends CommandBase {
         .setKeepAlive(keepAlive)
         .setSendBufferSize(sendBufferSize)
         .setReceiveBufferSize(receiveBufferSize)
-        .setHttp2MaxStreams(concurrency);
+        .setHttp2MultiplexingLimit(concurrency);
     if (protocol == HttpVersion.HTTP_2) {
       options.setHttp2MaxPoolSize(poolSize);
     } else {
