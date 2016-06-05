@@ -28,7 +28,7 @@ public class HttpClientCommand extends CommandBase {
   public int limit = -1;
 
   @Parameter(names = "--pool-size", description = "the pool size")
-  public int poolSize = 5;
+  public int poolSize = -1;
 
   @Parameter(names = "--keep-alive")
   public boolean keepAlive = false;
@@ -58,6 +58,13 @@ public class HttpClientCommand extends CommandBase {
         .setKeepAlive(keepAlive)
         .setSendBufferSize(sendBufferSize)
         .setReceiveBufferSize(receiveBufferSize);
+    if (poolSize > 0) {
+      if (protocol == HttpVersion.HTTP_2) {
+        options.setHttp2MaxPoolSize(poolSize);
+      } else {
+        options.setMaxPoolSize(poolSize);
+      }
+    }
     if (limit > 0) {
       if (protocol == HttpVersion.HTTP_2) {
         options.setHttp2MultiplexingLimit(limit);
