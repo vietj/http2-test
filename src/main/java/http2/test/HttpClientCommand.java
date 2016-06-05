@@ -18,16 +18,16 @@ import java.util.concurrent.atomic.LongAdder;
 @Parameters()
 public class HttpClientCommand extends CommandBase {
 
-  @Parameter(names = "--requests")
+  @Parameter(names = "--requests", description = "the number of requests")
   public int requests = 100;
 
-  @Parameter(names = "--protocol")
+  @Parameter(names = "--protocol", description = "the protocol")
   public HttpVersion protocol = HttpVersion.HTTP_1_1;
 
-  @Parameter(names = "--concurrency")
-  public int concurrency = -1;
+  @Parameter(names = "--limit", description = "the pipelining/multiplexing limit")
+  public int limit = -1;
 
-  @Parameter(names = "--pool-size")
+  @Parameter(names = "--pool-size", description = "the pool size")
   public int poolSize = 5;
 
   @Parameter(names = "--keep-alive")
@@ -39,6 +39,9 @@ public class HttpClientCommand extends CommandBase {
   @Parameter(names = "--window-size")
   public int windowSize = 65535;
 
+  @Parameter(names = "--frame-size")
+  public int frameSize = 16384;
+
   private final CountDownLatch doneLatch = new CountDownLatch(1);
 
   public static void main(String[] args) throws Exception {
@@ -48,14 +51,20 @@ public class HttpClientCommand extends CommandBase {
   public void run() throws Exception {
     Vertx vertx = Vertx.vertx();
     HttpClientOptions options = new HttpClientOptions()
-        .setInitialSettings(new Http2Settings().setInitialWindowSize(windowSize))
+        .setInitialSettings(new Http2Settings().setInitialWindowSize(windowSize).setMaxFrameSize(frameSize))
         .setH2cUpgrade(false)
         .setProtocolVersion(protocol)
         .setPipelining(pipelining)
         .setKeepAlive(keepAlive)
         .setSendBufferSize(sendBufferSize)
-        .setReceiveBufferSize(receiveBufferSize)
-        .setHttp2MultiplexingLimit(concurrency);
+        .setReceiveBufferSize(receiveBufferSize);
+    if (limit > 0) {
+      if (protocol == HttpVersion.HTTP_2) {
+        options.setHttp2MultiplexingLimit(limit);
+      } else {
+        options.setPipeliningLimit(limit);
+      }
+    }
     if (protocol == HttpVersion.HTTP_2) {
       options.setHttp2MaxPoolSize(poolSize);
     } else {

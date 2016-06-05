@@ -21,7 +21,7 @@ public class HttpBackendServerCommand extends BaseHttpServerCommand {
   public int chunkSize = 1024;
 
   @Parameter(names = "--delay", description = "the delay in ms for sending the response")
-  public long delay = 40;
+  public long delay = 0;
 
   public static void main(String[] args) throws Exception {
     new HttpBackendServerCommand().run();
