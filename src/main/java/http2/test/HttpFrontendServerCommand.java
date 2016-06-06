@@ -19,7 +19,6 @@ import io.vertx.core.spi.metrics.HttpClientMetrics;
 import io.vertx.core.spi.metrics.VertxMetrics;
 import org.HdrHistogram.Histogram;
 
-import java.io.PrintWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -42,8 +41,8 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
   @Parameter(names = "--pool-size")
   public int poolSize = 32;
 
-  @Parameter(names = "--backend-concurrency")
-  public int backendConcurrency = -1;
+  @Parameter(names = "--backend-limit")
+  public int backendLimit = -1;
 
   private HttpClient client;
   private int frontRequests;
@@ -149,9 +148,10 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
     options.setPipelining(true);
     options.setKeepAlive(true);
     options.setProtocolVersion(backendProtocol);
-    options.setH2cUpgrade(false);
-    if (backendConcurrency > 0) {
-      options.setHttp2MultiplexingLimit(backendConcurrency);
+    options.setHttp2ClearTextUpgrade(false);
+    if (backendLimit > 0) {
+      options.setHttp2MultiplexingLimit(backendLimit);
+      options.setPipeliningLimit(backendLimit);
     }
     client = vertx.createHttpClient(options);
     vertx.setPeriodic(1000, timerID -> {

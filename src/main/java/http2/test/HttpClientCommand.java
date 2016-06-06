@@ -6,6 +6,7 @@ import io.vertx.core.Vertx;
 import io.vertx.core.http.Http2Settings;
 import io.vertx.core.http.HttpClient;
 import io.vertx.core.http.HttpClientOptions;
+import io.vertx.core.http.HttpClientRequest;
 import io.vertx.core.http.HttpVersion;
 
 import java.util.concurrent.CountDownLatch;
@@ -52,31 +53,23 @@ public class HttpClientCommand extends CommandBase {
     Vertx vertx = Vertx.vertx();
     HttpClientOptions options = new HttpClientOptions()
         .setInitialSettings(new Http2Settings().setInitialWindowSize(windowSize).setMaxFrameSize(frameSize))
-        .setH2cUpgrade(false)
+        .setHttp2ClearTextUpgrade(false)
+        .setHttp2ConnectionWindowSize(65536 * 100)
         .setProtocolVersion(protocol)
         .setPipelining(pipelining)
         .setKeepAlive(keepAlive)
         .setSendBufferSize(sendBufferSize)
         .setReceiveBufferSize(receiveBufferSize);
     if (poolSize > 0) {
-      if (protocol == HttpVersion.HTTP_2) {
-        options.setHttp2MaxPoolSize(poolSize);
-      } else {
-        options.setMaxPoolSize(poolSize);
-      }
-    }
-    if (limit > 0) {
-      if (protocol == HttpVersion.HTTP_2) {
-        options.setHttp2MultiplexingLimit(limit);
-      } else {
-        options.setPipeliningLimit(limit);
-      }
-    }
-    if (protocol == HttpVersion.HTTP_2) {
       options.setHttp2MaxPoolSize(poolSize);
-    } else {
       options.setMaxPoolSize(poolSize);
     }
+    if (limit > 0) {
+      options.setHttp2MultiplexingLimit(limit);
+      options.setPipeliningLimit(limit);
+    }
+    options.setHttp2MaxPoolSize(poolSize);
+    options.setMaxPoolSize(poolSize);
     HttpClient client = vertx.createHttpClient(options);
     int size = requests;
     LongAdder received = new LongAdder();
