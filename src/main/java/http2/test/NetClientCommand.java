@@ -20,6 +20,7 @@ public class NetClientCommand extends CommandBase {
 
   public void run() throws Exception {
     NetClient client = vertx.createNetClient();
+/*
     start(client::connect, so -> {
       AtomicLong received = new AtomicLong();
       so.handler(buff -> {
@@ -34,5 +35,6 @@ public class NetClientCommand extends CommandBase {
     synchronized (o) {
       o.wait();
     }
+*/
   }
 }

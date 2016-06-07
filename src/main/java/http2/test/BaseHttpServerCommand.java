@@ -9,7 +9,7 @@ import io.vertx.core.http.HttpServerRequest;
 /**
  * @author <a href="mailto:julien@julienviet.com">Julien Viet</a>
  */
-public abstract class BaseHttpServerCommand extends CommandBase {
+public abstract class BaseHttpServerCommand extends ServerCommandBase {
 
   @Parameter(names = "--concurrency")
   public long concurrency = -1;

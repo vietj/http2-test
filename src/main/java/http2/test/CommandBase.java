@@ -18,12 +18,6 @@ public abstract class CommandBase {
   @Parameter(names = "--help", help = true)
   public boolean help;
 
-  @Parameter(names = "--host")
-  public String host = "localhost";
-
-  @Parameter(names = "--port")
-  public int port = 8080;
-
   @Parameter(names = "--so-backlog")
   public int soBacklog = 1024;
 
@@ -44,29 +38,4 @@ public abstract class CommandBase {
 
   public abstract void run() throws Exception;
 
-  protected final <T> T start(Startable<T> server) throws Exception {
-    return start(server, t -> {});
-  }
-
-  protected final <T> T start(Startable<T> server, Handler<T> handler) throws Exception {
-    CompletableFuture<T> fut = new CompletableFuture<>();
-    server.start(port, host, ar -> {
-      if (ar.succeeded()) {
-        T result = ar.result();
-        fut.complete(result);
-        handler.handle(result);
-      } else {
-        fut.completeExceptionally(ar.cause());
-      }
-    });
-    try {
-      return fut.get(10, TimeUnit.SECONDS);
-    } catch (ExecutionException e) {
-      throw (Exception) e.getCause();
-    }
-  }
-
-  public interface Startable<T> {
-    void start(int port, String host, Handler<AsyncResult<T>> handler);
-  }
 }

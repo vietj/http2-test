@@ -9,6 +9,8 @@ import io.vertx.core.http.HttpClientOptions;
 import io.vertx.core.http.HttpClientRequest;
 import io.vertx.core.http.HttpVersion;
 
+import java.net.URI;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.LongAdder;
@@ -43,6 +45,9 @@ public class HttpClientCommand extends CommandBase {
   @Parameter(names = "--frame-size")
   public int frameSize = 16384;
 
+  @Parameter
+  public List<String> uriParam;
+
   private final CountDownLatch doneLatch = new CountDownLatch(1);
 
   public static void main(String[] args) throws Exception {
@@ -50,6 +55,20 @@ public class HttpClientCommand extends CommandBase {
   }
 
   public void run() throws Exception {
+
+    if (uriParam == null || uriParam.size() < 1) {
+      throw new Exception("no URI or input file given");
+    }
+    URI absoluteURI = new URI(uriParam.get(0));
+    String host = absoluteURI.getHost();
+    int port = absoluteURI.getPort();
+    String path;
+    if (absoluteURI.getPath() == null || absoluteURI.getPath().isEmpty()) {
+      path = "/";
+    } else {
+      path = absoluteURI.getPath();
+    }
+
     Vertx vertx = Vertx.vertx();
     HttpClientOptions options = new HttpClientOptions()
         .setInitialSettings(new Http2Settings().setInitialWindowSize(windowSize).setMaxFrameSize(frameSize))
@@ -80,7 +99,7 @@ public class HttpClientCommand extends CommandBase {
     });
     vertx.runOnContext(v1 -> {
       for (int i = 0;i < size;i++) {
-        client.getNow(port, host, "/", resp -> {
+        client.getNow(port, host, path, resp -> {
           resp.handler(buff -> {
             received.add(buff.length());
           });

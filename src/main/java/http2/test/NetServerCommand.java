@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author <a href="mailto:julien@julienviet.com">Julien Viet</a>
  */
 @Parameters()
-public class NetServerCommand extends CommandBase {
+public class NetServerCommand extends ServerCommandBase {
 
   public static void main(String[] args) throws Exception {
     new NetServerCommand().run();
