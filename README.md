@@ -1,5 +1,8 @@
 # HTTP/1 versus HTTP/2
 
+This bench the time to perform a given number of http requests to a server and outline the queing effect
+of HTTP/1 versus the increased concurrency of HTTP/2. It's not a load test.
+
 several commands are available:
 
 ## Client
