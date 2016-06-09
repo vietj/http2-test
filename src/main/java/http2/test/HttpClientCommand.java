@@ -3,15 +3,26 @@ package http2.test;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.http.Http2Settings;
 import io.vertx.core.http.HttpClient;
 import io.vertx.core.http.HttpClientOptions;
 import io.vertx.core.http.HttpClientRequest;
+import io.vertx.core.http.HttpClientResponse;
 import io.vertx.core.http.HttpVersion;
+import io.vertx.core.http.WebSocket;
+import io.vertx.core.metrics.MetricsOptions;
+import io.vertx.core.metrics.impl.DummyVertxMetrics;
+import io.vertx.core.net.SocketAddress;
+import io.vertx.core.spi.metrics.HttpClientMetrics;
+import org.HdrHistogram.ConcurrentHistogram;
+import org.HdrHistogram.Histogram;
 
+import java.io.PrintStream;
 import java.net.URI;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.LongAdder;
 
@@ -20,6 +31,9 @@ import java.util.concurrent.atomic.LongAdder;
  */
 @Parameters()
 public class HttpClientCommand extends CommandBase {
+
+  @Parameter(names = "--histogram")
+  public String histogramParam = null;
 
   @Parameter(names = "--requests", description = "the number of requests")
   public int requests = 100;
@@ -49,6 +63,8 @@ public class HttpClientCommand extends CommandBase {
   public List<String> uriParam;
 
   private final CountDownLatch doneLatch = new CountDownLatch(1);
+  private final Histogram histogram = new ConcurrentHistogram(TimeUnit.MINUTES.toNanos(1), 2);
+  private long startTime;
 
   public static void main(String[] args) throws Exception {
     new HttpClientCommand().run();
@@ -69,8 +85,43 @@ public class HttpClientCommand extends CommandBase {
       path = absoluteURI.getPath();
     }
 
-    Vertx vertx = Vertx.vertx();
-    HttpClientOptions options = new HttpClientOptions()
+    MetricsOptions metricsOptions = new MetricsOptions().setEnabled(true).setFactory((v, options) -> new DummyVertxMetrics() {
+      @Override
+      public HttpClientMetrics createMetrics(HttpClient client, HttpClientOptions options) {
+        return new HttpClientMetrics<Long, Void, Void, Void, Void>() {
+          public Void createEndpoint(String host, int port, int maxPoolSize) { return null; }
+          public void closeEndpoint(String host, int port, Void endpointMetric) {}
+          public Void enqueueRequest(Void endpointMetric) { return null; }
+          public void dequeueRequest(Void endpointMetric, Void taskMetric) { }
+          public void endpointConnected(Void endpointMetric, Void socketMetric) { }
+          public void endpointDisconnected(Void endpointMetric, Void socketMetric) { }
+          public Long requestBegin(Void endpointMetric, Void socketMetric, SocketAddress localAddress, SocketAddress remoteAddress, HttpClientRequest request) {
+            return System.nanoTime();
+          }
+          public void requestEnd(Long requestMetric) { }
+          public void responseBegin(Long requestMetric, HttpClientResponse response) { }
+          public Long responsePushed(Void endpointMetric, Void socketMetric, SocketAddress localAddress, SocketAddress remoteAddress, HttpClientRequest request) { return null; }
+          public void requestReset(Long requestMetric) {
+            histogram.recordValue(System.nanoTime() - requestMetric);
+          }
+          public void responseEnd(Long requestMetric, HttpClientResponse response) {
+            histogram.recordValue(System.nanoTime() - requestMetric);
+          }
+          public Void connected(Void endpointMetric, Void socketMetric, WebSocket webSocket) { return null; }
+          public void disconnected(Void webSocketMetric) { }
+          public Void connected(SocketAddress remoteAddress, String remoteName) { return null; }
+          public void disconnected(Void socketMetric, SocketAddress remoteAddress) { }
+          public void bytesRead(Void socketMetric, SocketAddress remoteAddress, long numberOfBytes) { }
+          public void bytesWritten(Void socketMetric, SocketAddress remoteAddress, long numberOfBytes) { }
+          public void exceptionOccurred(Void socketMetric, SocketAddress remoteAddress, Throwable t) { }
+          public void close() { }
+          public boolean isEnabled() { return true; }
+        };
+      }
+    });
+
+    Vertx vertx = Vertx.vertx(new VertxOptions().setMetricsOptions(metricsOptions));
+    HttpClientOptions clientOptions = new HttpClientOptions()
         .setInitialSettings(new Http2Settings().setInitialWindowSize(windowSize).setMaxFrameSize(frameSize))
         .setHttp2ClearTextUpgrade(false)
         .setHttp2ConnectionWindowSize(65536 * 100)
@@ -80,20 +131,20 @@ public class HttpClientCommand extends CommandBase {
         .setSendBufferSize(sendBufferSize)
         .setReceiveBufferSize(receiveBufferSize);
     if (poolSize > 0) {
-      options.setHttp2MaxPoolSize(poolSize);
-      options.setMaxPoolSize(poolSize);
+      clientOptions.setHttp2MaxPoolSize(poolSize);
+      clientOptions.setMaxPoolSize(poolSize);
     }
     if (limit > 0) {
-      options.setHttp2MultiplexingLimit(limit);
-      options.setPipeliningLimit(limit);
+      clientOptions.setHttp2MultiplexingLimit(limit);
+      clientOptions.setPipeliningLimit(limit);
     }
-    options.setHttp2MaxPoolSize(poolSize);
-    options.setMaxPoolSize(poolSize);
-    HttpClient client = vertx.createHttpClient(options);
+//    clientOptions.setHttp2MaxPoolSize(poolSize);
+//    clientOptions.setMaxPoolSize(poolSize);
+    HttpClient client = vertx.createHttpClient(clientOptions);
     int size = requests;
     LongAdder received = new LongAdder();
     AtomicInteger done = new AtomicInteger();
-    long startTime = System.currentTimeMillis();
+    startTime = System.currentTimeMillis();
     long timerId = vertx.setPeriodic(1000, id -> {
       System.out.format("%d/%d %d kb/s%n", done.get(), size, (received.longValue() * 1000) / (1024 * (System.currentTimeMillis() - startTime)));
     });
@@ -105,18 +156,37 @@ public class HttpClientCommand extends CommandBase {
           });
           resp.endHandler(v2 -> {
             if (done.incrementAndGet() == size) {
-              System.out.format("finished in %.2f s%n", (System.currentTimeMillis() - startTime) / 1000D);
-              doneLatch.countDown();
               vertx.cancelTimer(timerId);
-              vertx.close(v3 -> {
-                System.exit(0);
-              });
+              end();
             }
           });
         });
       }
     });
     doneLatch.await();
+  }
+
+  private void end() {
+    System.out.format("finished in %.2f s%n", (System.currentTimeMillis() - startTime) / 1000D);
+    Histogram cp = histogram.copy();
+    System.out.println("min    = " + TimeUnit.NANOSECONDS.toMillis(cp.getMinValue()));
+    System.out.println("max    = " + TimeUnit.NANOSECONDS.toMillis(cp.getMaxValue()));
+    System.out.println("50%    = " + TimeUnit.NANOSECONDS.toMillis(cp.getValueAtPercentile(50)));
+    System.out.println("90%    = " + TimeUnit.NANOSECONDS.toMillis(cp.getValueAtPercentile(90)));
+    System.out.println("99%    = " + TimeUnit.NANOSECONDS.toMillis(cp.getValueAtPercentile(99)));
+    System.out.println("99.9%  = " + TimeUnit.NANOSECONDS.toMillis(cp.getValueAtPercentile(99.9)));
+    System.out.println("99.99% = " + TimeUnit.NANOSECONDS.toMillis(cp.getValueAtPercentile(99.99)));
+    if (histogramParam != null) {
+      try (PrintStream ps = new PrintStream(histogramParam)) {
+        cp.outputPercentileDistribution(ps, 1000000.0);
+      } catch(Exception e) {
+        e.printStackTrace();
+      }
+    }
+    doneLatch.countDown();
+    vertx.close(v3 -> {
+      System.exit(0);
+    });
   }
 
 }

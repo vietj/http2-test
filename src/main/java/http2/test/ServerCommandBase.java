@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class ServerCommandBase extends CommandBase {
 
   @Parameter(names = "--host")
-  public String host = "localhost";
+  public String host = "0.0.0.0";
 
   @Parameter(names = "--port")
   public int port = 8080;

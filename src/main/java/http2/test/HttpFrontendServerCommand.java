@@ -19,7 +19,9 @@ import io.vertx.core.spi.metrics.HttpClientMetrics;
 import io.vertx.core.spi.metrics.VertxMetrics;
 import org.HdrHistogram.Histogram;
 
+import java.net.URI;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -29,26 +31,26 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Parameters()
 public class HttpFrontendServerCommand extends BaseHttpServerCommand {
 
-  @Parameter(names = "--backend-host")
-  public String backendHost = "localhost";
-
-  @Parameter(names = "--backend-port")
-  public int backendPort = 8080;
-
-  @Parameter(names = "--backend-protocol")
-  public HttpVersion backendProtocol = HttpVersion.HTTP_1_1;
-
   @Parameter(names = "--pool-size")
   public int poolSize = 32;
 
-  @Parameter(names = "--backend-limit")
+  @Parameter(names = "--protocol")
+  public HttpVersion backendProtocol = HttpVersion.HTTP_1_1;
+
+  @Parameter(names = "--limit")
   public int backendLimit = -1;
+
+  @Parameter
+  public List<String> uriParam;
 
   private HttpClient client;
   private int frontRequests;
   private Histogram histogram = new Histogram(4);
   private Map<Object, SocketMetric> queuedStreams = new LinkedHashMap<>();
   private AtomicInteger pendingRequests = new AtomicInteger();
+  private int port;
+  private String host;
+  private String path;
 
   public HttpFrontendServerCommand() throws Exception {
   }
@@ -143,6 +145,19 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
 
   @Override
   public void run() throws Exception {
+
+    if (uriParam == null || uriParam.size() < 1) {
+      throw new Exception("no URI or input file given");
+    }
+    URI absoluteURI = new URI(uriParam.get(0));
+    host = absoluteURI.getHost();
+    port = absoluteURI.getPort();
+    if (absoluteURI.getPath() == null || absoluteURI.getPath().isEmpty()) {
+      path = "/";
+    } else {
+      path = absoluteURI.getPath();
+    }
+
     HttpClientOptions options = new HttpClientOptions();
     options.setMaxPoolSize(poolSize);
     options.setPipelining(true);
@@ -182,7 +197,7 @@ public class HttpFrontendServerCommand extends BaseHttpServerCommand {
   protected void handle(HttpServerRequest req) {
     frontRequests++;
     long now = System.currentTimeMillis();
-    HttpClientRequest clientReq = client.get(backendPort, backendHost, "/somepath");
+    HttpClientRequest clientReq = client.get(port, host, path);
     clientReq.handler(resp -> {
       resp.endHandler(v -> {
         frontRequests--;
